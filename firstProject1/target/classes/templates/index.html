@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>vaccination.com</title>
+  <link rel="stylesheet" href="" th:href="@{/css/style.css}" />
+</head>
+
+<body>
+
+  <h1 style="color: rgb(143, 227, 245)" align="center">vaccination Service provider</h1>
+  <p style="color: rgb(91, 51, 236)" align="center">
+    Come , register and take free vaccination
+  </p>
+  <center>
+    <div class="container">
+      <div class="title">Registration</div>
+      <div class="content">
+  </center>
+  <center>
+    <form action="/home1" method="post">
+      <div class="user-details">
+        <div class="input-box">
+          <span class="details">Username</span>
+          <input type="text" placeholder="Enter your username" name="name" value=""required>
+        </div>
+        <div class="input-box">
+          <span class="details">Phone Number</span>
+          <input type="text" placeholder="Enter your number"name="contact" value="">
+        </div>
+        <div class="Id-type">
+          <span class="title">Identity Details</span>
+        <div class="fields">
+            <div class="input-field">
+                <label>ID Type</label>
+                <input type="text" placeholder="Enter ID type" name="idType" required>
+            </div>
+            <div class="input-field">
+                <label>ID Number</label>
+                <input type="number" placeholder="Enter ID number" name="idNumber">
+            </div>
+       
+        </div>
+      </div>
+      
+        
+
+
+      <div class="vaccine-details">
+        <input type="radio" name="vname" id="dot-1">
+        <input type="radio" name="vname" id="dot-2">
+        <input type="radio" name="vname" id="dot-3">
+        <span class="gender-title">Vaccine Name</span>
+        <br>
+        <div class="category">
+          <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Covaccine</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Covishield</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Sputnik</span>
+          </label>
+        </div>
+      </div>
+      <div class="button">
+        <input type="submit" value="Register">
+      </div>
+
+      
+
+    </form>
+  </div>
+</div>
+  </center>
+</body>
+
+</html>
